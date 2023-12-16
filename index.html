@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dufry Emporium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="./js/storesArr.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="page-main container">
+            <div class="login-container">
+                <div class="block block-customer-login">
+                    <div class="login-container__contentwrapper">
+                        <div class="login-container__logo">
+                            <img src="./img/Brandlogo.svg" alt="logo">
+                        </div>
+
+                        <div class="login-container__content">
+                            <h1 class="login-container__title">Welcome to Emporium</h1>
+
+                            <p>Offering exclusive discounts on a range of fantastic brands for employees, friends and family.</p>
+
+                            <form autocomplete="off">
+                                <div class="js-select-wrapper select-wrapper">
+                                    <p class="select-wrapper__label">
+                                        Select a country
+                                    </p>
+
+                                    <div class="custom-select">
+                                        <select name="countrySelect" id="countrySelect" class="stores-list js-stores-list js-original-select">
+                                            <!--  here would be rendered store items options-->
+                                        </select>
+                                    </div>
+
+                                    <div class="js-validation-messages valid-msg-wrapper d-none">
+                                        Please choose an option
+                                    </div>
+                                </div>
+
+                                <div class="js-fnf-select-wrapper js-select-wrapper select-wrapper d-none">
+                                    <p class="select-wrapper__label">
+                                        Are you an employee or friends & family?
+                                    </p>
+
+                                    <div class="custom-select">
+                                        <select name="fnfSelect" id="fnfSelect" class="js-original-select">
+                                            <option class="fnf-item" value="0">
+                                                Please select
+                                            </option>
+
+                                            <option class="fnf-item" value="employee">
+                                                Employee
+                                            </option>
+
+                                            <option class="fnf-item" value="fnf">
+                                                Friends &amp; family
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="js-fnf-messages js-validation-messages valid-msg-wrapper d-none">
+                                        Please choose an option
+                                    </div>
+                                </div>
+
+                                <button>Enter site</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
